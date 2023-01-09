@@ -1,2 +1,151 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nanum+Gothic&family=Noto+Sans&display=swap');
+
+$color-white: #fff;
+$color-red-df: #e72819;
+$color-red-ico: #ed3838;
+$color-red: #e0260d;
+$color-black: #000;
+$color-gray: #777;
+$color-111: #111;
+$color-2e2e2e:#2e2e2e;
+
+$fs-11: 11px;
+$fs-12: 12px;
+$fs-13: 13px;
+$fs-15: 15px;
+$fs-16: 16px;
+$fs-18: 18px;
+$fw-bold: 700;
+
+//공통속성
+#wrap{width: 100%;}
+#header{width: 100%;}
+
+//상단바&좌측브랜드
+#topBar{
+    width: 100%;
+    background: $color-red-df;
+    text-align: center;
+    padding: 7px 0;
+    a{
+        color: $color-white;
+    }
+}
+#leftBrand{
+    a{
+        position: fixed;
+        left: -258px;
+    }
+}
+#icebisket{top: 160px;}
+#nununu{top: 265px;}
+
+//헤더영역
+.header{
+    position: fixed;
+    top: 0;
+    background: #ddd;
+    margin: 30px 0 0 0;
+    padding: 10px 50px 90px 50px;
+    transition: .4s;
+    z-index: 9999;
+    &:hover{
+        background: $color-white;
+    }
+}
+
+.topLogo{
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.topLeft{
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    a{
+        color: $color-black;
+        font-size: $fs-13;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        line-height: 25px;
+        padding: 0 5px;
+        
+    }
+    &-item:first-child::after{
+        content: ' \25BE';
+    }
+}
+.dropDown{
+    position: absolute;
+    top: 22px;
+    left: 0;
+    width: 124px;
+    background: $color-white;
+    box-shadow: 0 5px 10px rgba(0,0,0,.3);
+    a{
+        display: inline-block;
+        line-height: 2.2;
+    }
+        
+}
+.topRight{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    a{
+        color: $color-2e2e2e;
+        font-size: $fs-13;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        line-height: 25px;
+        padding: 0 5px;
+    }
+}
+.topRIcon{
+    position: absolute;
+    top: 78px;
+    right: 50px;
+    width: 300px;
+    height: 40px;
+    a{
+        padding: 0 4px;
+        &.heart{
+            img{width: 23px;}
+        }
+        span{
+            position: absolute;
+            top: 3px;
+            right: 39px;
+            border-radius: 50%;
+            background: $color-red-ico;
+            padding: 3px 6.5px;
+            color: $color-white;
+            font-family: tahoma;
+        }
+    }
+
+}
+.nav{
+    position: relative;
+    text-align: center;
+    top: 88px;
+    left: 50%;
+    transform: translate(-50%);
+    &-1depth{
+        display: flex;
+        justify-content: center;
+
+        &-link{
+            font-size: $fs-16;
+            font-weight: $fw-bold;
+            padding: 0 25px;
+            color: $color-2e2e2e;
+            letter-spacing: 1.5px;
+            line-height: 25px;
+        }
+    }
+}
+
