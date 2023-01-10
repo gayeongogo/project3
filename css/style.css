@@ -12,6 +12,10 @@ body {
   width: 100%;
 }
 
+#main {
+  width: 100%;
+}
+
 #topBar {
   width: 100%;
   background: #e72819;
@@ -392,4 +396,15 @@ body {
 }
 .nav-1depth-item:hover .nav-2depth {
   display: block;
+}
+
+.main img {
+  width: 100%;
+}
+
+.bx-wrapper {
+  max-width: 100% !important;
+  box-shadow: 0 0 5px none;
+  border: none;
+  background: #fff;
 }/*# sourceMappingURL=style.css.map */

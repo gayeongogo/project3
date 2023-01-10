@@ -24,6 +24,7 @@ $fw-bold: 700;
 body{background: #ddd;}
 #wrap{width: 100%;}
 #header{width: 100%;}
+#main{width: 100%;}
 
 //상단바&좌측브랜드
 #topBar{
@@ -391,4 +392,17 @@ body{background: #ddd;}
             display: block;
         }
     }
+}
+
+//메인이미지
+.main{
+    img{width: 100%;}
+}
+.bx-wrapper {
+    max-width: 100% !important;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: 0 0 5px none;
+    border: none;
+    background: #fff;
 }
