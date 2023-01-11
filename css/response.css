@@ -13,6 +13,7 @@
     .topLeft, .topRight, .nav{display: none;}
     .topLogo{top: 20px;}
     .topRIcon{top: 22px; right: 15px;}
+    .main{margin-top: 70px;}
 }
 
 @media screen and (max-width: 650px) {

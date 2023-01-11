@@ -40,6 +40,7 @@ body{background: #ddd;}
     a{
         position: fixed;
         left: -258px;
+        z-index: 9999;
     }
 }
 #icebisket{top: 160px;}
@@ -228,6 +229,7 @@ body{background: #ddd;}
     top: 35px;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 999;
 }
 .topLeft{
     position: absolute;
@@ -328,7 +330,6 @@ body{background: #ddd;}
 
 }
 .topMark{
-    display: none; //js
     position: absolute;
     top: 180px;
     left: 50%;
@@ -394,15 +395,45 @@ body{background: #ddd;}
     }
 }
 
-//메인이미지
-.main{
-    img{width: 100%;}
-}
-.bx-wrapper {
-    max-width: 100% !important;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    box-shadow: 0 0 5px none;
-    border: none;
-    background: #fff;
+//롤링영역
+.main-rolling{
+    width: 100%;
+    position: relative;
+    .leftBtn{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+        z-index: 999;
+        cursor: pointer;
+    }
+    .rightBtn{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0, -50%);
+        z-index: 999;
+        cursor: pointer;
+    }
+    &-area{
+        width: 100%;
+        height: 690px;
+        overflow: hidden;
+        ul{
+            width: 2880px;
+            position: relative;
+            left: 0;
+            li{
+                width: 480px;
+                float: left;
+                a{
+                    display: block;
+                    img{
+                        width: 100%;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
 }

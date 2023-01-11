@@ -29,6 +29,7 @@ body {
 #leftBrand a {
   position: fixed;
   left: -258px;
+  z-index: 9999;
 }
 
 #icebisket {
@@ -233,6 +234,7 @@ body {
   top: 35px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 999;
 }
 
 .topLeft {
@@ -333,7 +335,6 @@ body {
 }
 
 .topMark {
-  display: none;
   position: absolute;
   top: 180px;
   left: 50%;
@@ -398,13 +399,44 @@ body {
   display: block;
 }
 
-.main img {
+.main-rolling {
   width: 100%;
+  position: relative;
 }
-
-.bx-wrapper {
-  max-width: 100% !important;
-  box-shadow: 0 0 5px none;
-  border: none;
-  background: #fff;
+.main-rolling .leftBtn {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  z-index: 999;
+  cursor: pointer;
+}
+.main-rolling .rightBtn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  z-index: 999;
+  cursor: pointer;
+}
+.main-rolling-area {
+  width: 100%;
+  height: 690px;
+  overflow: hidden;
+}
+.main-rolling-area ul {
+  width: 2880px;
+  position: relative;
+  left: 0;
+}
+.main-rolling-area ul li {
+  width: 480px;
+  float: left;
+}
+.main-rolling-area ul li a {
+  display: block;
+}
+.main-rolling-area ul li a img {
+  width: 100%;
+  display: block;
 }/*# sourceMappingURL=style.css.map */
