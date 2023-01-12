@@ -28,16 +28,17 @@ body {
 
 #leftBrand a {
   position: fixed;
-  left: -258px;
   z-index: 9999;
 }
 
 #icebisket {
   top: 160px;
+  left: -258px;
 }
 
 #nununu {
   top: 265px;
+  left: -258px;
 }
 
 /* 모바일메뉴 */
@@ -317,11 +318,19 @@ body {
 .topRIcon a.heart img {
   width: 23px;
 }
+.topRIcon a.heart img:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
 .topRIcon a.cart {
   width: 60px;
   position: relative;
   top: -4px;
   right: 4px;
+}
+.topRIcon a.cart:hover {
+  opacity: 0.8;
+  transition: 0.3s;
 }
 .topRIcon a.cart span {
   position: absolute;
@@ -432,6 +441,8 @@ body {
 .main-rolling-area ul li {
   width: 480px;
   float: left;
+  position: relative;
+  cursor: pointer;
 }
 .main-rolling-area ul li a {
   display: block;
@@ -439,4 +450,27 @@ body {
 .main-rolling-area ul li a img {
   width: 100%;
   display: block;
+}
+.main-rolling-area ul li span {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  transition: 0.4s;
+}
+.main-rolling-area ul li span em {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+.main-rolling-area ul li:hover span {
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */

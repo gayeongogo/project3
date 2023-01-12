@@ -20,3 +20,7 @@
     .topRIcon a{display: none;}
     .topRIcon .search{padding: 0;}
 }
+
+@media screen and (max-width: 504px) {
+    .main{margin-top: 54px;}
+}
