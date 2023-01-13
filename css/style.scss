@@ -411,73 +411,62 @@ body{background: #ddd;}
 }
 
 //롤링영역
-.main-rolling{
-    width: 100%;
+.slick-slide{
     position: relative;
-    .leftBtn{
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translate(0, -50%);
-        z-index: 999;
-        cursor: pointer;
-    }
-    .rightBtn{
-        position: absolute;
-        top: 50%;
-        right: 0;
-        transform: translate(0, -50%);
-        z-index: 999;
-        cursor: pointer;
-    }
-    &-area{
-        width: 100%;
-        height: 690px;
-        overflow: hidden;
-        ul{
-            width: 2880px;
-            position: relative;
-            left: 0;
-            li{
-                width: 480px;
-                float: left;
-                position: relative;
-                cursor: pointer;
-                a{
-                    display: block;
-                    img{
-                        width: 100%;
-                        display: block;
-                    }
-                }
-                span{
-                    opacity: 0;
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    top: 0;
-                    left: 0;
-                    background: rgba(0,0,0,.3);
-                    transition: .4s;
-                    em{
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        width: 100%;
-                        height: 100%;
-                        font-size: $fs-16;
-                        font-weight: 600;
-                        color: $color-white;
-                    }
-                }
-                &:hover span{
-                    opacity: 1;
-                }
-            }
+    cursor: pointer;
+    a{
+        display: block;
+        img{
+            width: 100%;
+            display: block;
         }
+    }
+    span{
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,.3);
+        transition: .4s;
+        em{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            font-size: $fs-16;
+            font-weight: 600;
+            color: $color-white;
+        }
+    }
+    &:hover span{
+        opacity: 1;
     }
 }
 
-//모바일 슬라이더
+.slick-prev{
+    background: url(../imges/main_prev.png) no-repeat center center/25px;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 41%;
+    left: 10px;
+    z-index: 999;
+    cursor: pointer;
+    font-size: 0;
+}
+.slick-next{
+    background: url(../imges/main_next.png) no-repeat center center/25px;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 41%;
+    right: 10px;
+    z-index: 999;
+    cursor: pointer;
+    font-size: 0;
+}
 
 

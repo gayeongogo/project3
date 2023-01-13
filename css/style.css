@@ -408,50 +408,18 @@ body {
   display: block;
 }
 
-.main-rolling {
-  width: 100%;
-  position: relative;
-}
-.main-rolling .leftBtn {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(0, -50%);
-  z-index: 999;
-  cursor: pointer;
-}
-.main-rolling .rightBtn {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translate(0, -50%);
-  z-index: 999;
-  cursor: pointer;
-}
-.main-rolling-area {
-  width: 100%;
-  height: 690px;
-  overflow: hidden;
-}
-.main-rolling-area ul {
-  width: 2880px;
-  position: relative;
-  left: 0;
-}
-.main-rolling-area ul li {
-  width: 480px;
-  float: left;
+.slick-slide {
   position: relative;
   cursor: pointer;
 }
-.main-rolling-area ul li a {
+.slick-slide a {
   display: block;
 }
-.main-rolling-area ul li a img {
+.slick-slide a img {
   width: 100%;
   display: block;
 }
-.main-rolling-area ul li span {
+.slick-slide span {
   opacity: 0;
   position: absolute;
   width: 100%;
@@ -461,7 +429,7 @@ body {
   background: rgba(0, 0, 0, 0.3);
   transition: 0.4s;
 }
-.main-rolling-area ul li span em {
+.slick-slide span em {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -471,6 +439,30 @@ body {
   font-weight: 600;
   color: #fff;
 }
-.main-rolling-area ul li:hover span {
+.slick-slide:hover span {
   opacity: 1;
+}
+
+.slick-prev {
+  background: url(../imges/main_prev.png) no-repeat center center/25px;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 41%;
+  left: 10px;
+  z-index: 999;
+  cursor: pointer;
+  font-size: 0;
+}
+
+.slick-next {
+  background: url(../imges/main_next.png) no-repeat center center/25px;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 41%;
+  right: 10px;
+  z-index: 999;
+  cursor: pointer;
+  font-size: 0;
 }/*# sourceMappingURL=style.css.map */
