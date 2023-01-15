@@ -16,6 +16,14 @@ body {
   width: 100%;
 }
 
+#section1 {
+  width: 100%;
+}
+
+#section2 {
+  width: 100%;
+}
+
 #topBar {
   width: 100%;
   background: #e72819;
@@ -465,4 +473,80 @@ body {
   z-index: 999;
   cursor: pointer;
   font-size: 0;
+}
+
+.tab-product {
+  width: 90%;
+  margin: 0 auto 40px;
+}
+.tab-product-set > ul {
+  font-size: 0;
+  text-align: center;
+  margin: 0 0 60px 0;
+}
+.tab-product-set > ul > li {
+  display: inline-block;
+  margin: 0 20px;
+  width: auto;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 15px;
+  text-align: center;
+  padding: 0px;
+  height: 30px;
+  line-height: 30px;
+  border-top: 0;
+  border-left: 0;
+  cursor: pointer;
+}
+.tab-product-set > ul > li > span {
+  display: block;
+  padding: 0px 0;
+  cursor: pointer;
+}
+> .tab-product-set > ul > li.on > span {
+  color: #e72819;
+  border-bottom: 2px solid #e72819;
+}
+.tab-product-conts {
+  position: relative;
+  border-top: 0;
+  width: 100%;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+}
+.tab-product-list {
+  margin: 22px 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.tab-product-list > ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tab-product-list > ul > li {
+  flex-basis: 25%;
+  overflow: hidden;
+}
+.tab-product-list > ul > li > a {
+  position: relative;
+  display: inline-block;
+  width: 90%;
+}
+.tab-product-list > ul > li > a > img {
+  width: 100%;
+}
+
+.img-desc {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.mainTitle {
+  text-align: center;
+  padding: 50px 0 20px 0;
 }/*# sourceMappingURL=style.css.map */

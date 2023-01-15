@@ -25,6 +25,8 @@ body{background: #ddd;}
 #wrap{width: 100%;}
 #header{width: 100%;}
 #main{width: 100%;}
+#section1{width: 100%;}
+#section2{width: 100%;}
 
 //상단바&좌측브랜드
 #topBar{
@@ -469,4 +471,97 @@ body{background: #ddd;}
     font-size: 0;
 }
 
+//section2
+.tab-product{
+    width: 90%;
+    margin: 0 auto 40px;
+    &-set{
+        >ul{
+            font-size: 0;
+            text-align: center;
+            margin: 0 0 60px 0;
+            >li{
+                display: inline-block;
+                margin: 0 20px;
+                width: auto;
+                font-weight: 600;
+                letter-spacing: 1.0px;
+                font-size: 15px;
+                text-align: center;
+                padding: 0px;
+                height: 30px;
+                line-height: 30px;
+                border-top: 0;
+                border-left: 0;
+                cursor: pointer;
+                >span{
+                    display: block;
+                    padding: 0px 0;
+                    cursor: pointer;
+                }
+                >&.on{
+                    >span{
+                        color: $color-red-df;
+                        border-bottom: 2px solid $color-red-df;
+                    }
+                }
+            }
+        }
+    }
+    &-conts{
+        position: relative;
+        border-top: 0;
+        width: 100%;
+        margin: 0 auto;
+        display: inline-block;
+        text-align: center;
+    }
+    &-list{
+        margin: 22px 0 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        >ul{
+            display: flex;
+            flex-wrap: wrap;
+            >li{
+                flex-basis: 25%;
+                overflow: hidden;
+                
+                >a{
+                    position: relative;
+                    display: inline-block;
+                    width: 90%;
+                    >img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+.img-desc{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    p{}
+}
+.bottom-desc{
+    .wish_cart{
+        a{}
+    }
+    .name{
+        a{
+            span{}
+        }
+    }
+    span.price{}
+    strong.discount{}
+}
+.mainTitle{
+    text-align: center;
+    padding: 50px 0 20px 0;
+}
 
