@@ -478,6 +478,7 @@ body {
 .tab-product {
   width: 90%;
   margin: 0 auto 40px;
+  height: auto;
 }
 .tab-product-set > ul {
   font-size: 0;
@@ -504,23 +505,16 @@ body {
   padding: 0px 0;
   cursor: pointer;
 }
-> .tab-product-set > ul > li.on > span {
+.tab-product-set > ul > li.on span {
   color: #e72819;
   border-bottom: 2px solid #e72819;
 }
 .tab-product-conts {
-  position: relative;
   border-top: 0;
   width: 100%;
   margin: 0 auto;
   display: inline-block;
   text-align: center;
-}
-.tab-product-list {
-  margin: 22px 0 0;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 .tab-product-list > ul {
   display: flex;
@@ -537,16 +531,85 @@ body {
 }
 .tab-product-list > ul > li > a > img {
   width: 100%;
+  transform: scale(0.95);
+  transition: 0.3s;
+}
+.tab-product-list > ul > li > a > img:hover {
+  transform: scale(1.02);
+}
+.tab-product-list > ul > li > a:hover .img-desc {
+  opacity: 1;
 }
 
 .img-desc {
+  opacity: 0;
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
+  background: rgba(255, 255, 255, 0.9);
+  border: 0.5px solid #888;
+  padding: 7px 0;
+  width: 100%;
 }
+.img-desc p {
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.bottom-desc {
+  margin: 0 auto 10px;
+  width: 90%;
+  padding: 0px 7px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 0;
+}
+.bottom-desc a {
+  display: inline-block;
+  font-size: 12px;
+}
+.bottom-desc a img {
+  width: 23px;
+  margin: 0 3px;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+}
+.bottom-desc .wish_cart a:first-child img {
+  width: 20px;
+}
+.bottom-desc .name {
+  display: block;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  padding: 10px 0 8px 0;
+}
+.bottom-desc .name a {
+  color: #2e2e2e;
+}
+.bottom-desc span.price {
+  font-size: 12px;
+  color: #333;
+  font-weight: bold;
+  display: block;
+  padding: 2px 0;
+}
+.bottom-desc strong.discount {
+  display: block;
+  font-size: 12px;
+  color: #e0260d;
+  font-weight: bold;
+  padding: 2px 0;
+}
+
 .mainTitle {
   text-align: center;
   padding: 50px 0 20px 0;
+}
+.mainTitle img {
+  padding: 70px 0 40px 0;
 }/*# sourceMappingURL=style.css.map */

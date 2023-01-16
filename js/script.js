@@ -101,4 +101,40 @@ $(function(){
       }
     ]
   });
-  })
+});
+
+/* 메인콘탠츠 탭 */
+
+//auto
+let tabs = $('.tab-product-set ul li');
+var timerId = 0;
+
+timerId = setInterval(function() {
+let onTab = tabs.filter('.on');
+var nextTab = onTab.index() < tabs.length-1 ? onTab.next() : tabs.first();
+nextTab.click();
+}, 3000);
+  
+$(".tab-product-conts").mouseleave(function () {
+timerId = setInterval(function() {
+var onTab = tabs.filter('.on');
+var nextTab = onTab.index() < tabs.length-1 ? onTab.next() : tabs.first();
+nextTab.click();
+}, 3000);        
+    
+});
+$(".tab-product-conts").mouseenter(function () {
+    clearInterval(timerId);
+});
+
+//click
+$(".tab-product-list").hide();
+$(".tab-product-list:first").show();
+$(".tab-product-set ul li").click(function (e) {
+  e.preventDefault();
+    $(".tab-product-set ul li").removeClass("on");
+    $(this).addClass("on");
+    $(".tab-product-list").hide()
+    var activeTab = $(this).find('a').attr("href");
+    $( activeTab).fadeIn()
+});
