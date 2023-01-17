@@ -21,7 +21,7 @@ $fs-18: 18px;
 $fw-bold: 700;
 
 //공통속성
-body{background: #ddd;}
+/* body{background: #ddd;} */
 #wrap{width: 100%;}
 #header{width: 100%;}
 #main{width: 100%;}
@@ -523,6 +523,7 @@ body{background: #ddd;}
             >li{
                 flex-basis: 25%;
                 overflow: hidden;
+                position: relative;
                 
                 >a{
                     position: relative;
@@ -613,6 +614,24 @@ body{background: #ddd;}
         font-weight: bold;
         padding: 2px 0;
     }
+}
+.discountBox{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background: $color-red-df;
+    color: $color-white;
+    font-weight: $fw-bold;
+
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+.sale-rate{
+    display: inline-block;
 }
 .mainTitle{
     text-align: center;

@@ -1,9 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Nanum+Gothic&family=Noto+Sans&display=swap");
-body {
-  background: #ddd;
-}
-
+/* body{background: #ddd;} */
 #wrap {
   width: 100%;
 }
@@ -523,6 +520,7 @@ body {
 .tab-product-list > ul > li {
   flex-basis: 25%;
   overflow: hidden;
+  position: relative;
 }
 .tab-product-list > ul > li > a {
   position: relative;
@@ -604,6 +602,25 @@ body {
   color: #e0260d;
   font-weight: bold;
   padding: 2px 0;
+}
+
+.discountBox {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background: #e72819;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+}
+
+.sale-rate {
+  display: inline-block;
 }
 
 .mainTitle {
