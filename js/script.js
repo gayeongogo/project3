@@ -138,3 +138,5 @@ $(".tab-product-set ul li").click(function (e) {
     var activeTab = $(this).find('a').attr("href");
     $( activeTab).fadeIn()
 });
+
+/* 메인배너 텍스트 */
