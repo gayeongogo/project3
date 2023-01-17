@@ -640,3 +640,44 @@ $fw-bold: 700;
     padding: 50px 0 20px 0;
     img{padding: 70px 0 40px 0;}
 }
+
+//메인배너 영역
+.main-banner{
+    width: 100%;
+    padding: 40px 0 0 0;
+    overflow: hidden;
+
+    &-img{
+        width: 100%;
+        img{
+            display: block;
+            width: 100%;
+            transition: .3s;
+            &:hover{
+                opacity: .8;
+            }
+        }
+    }
+    &-text{
+        width: 9474px;
+        img{
+            display: block;
+            height: 120px;
+            
+        }
+    }
+}
+
+//인스타그램 영역
+.insta{
+    text-align: center;
+    margin: 100px auto 50px;
+    &-logo{
+        margin: 0 0 40px 0;
+        img{padding: 0 0 15px 0;}
+        span{
+            font-size: $fs-15;
+            letter-spacing: 2.3px;
+        }
+    }
+}
