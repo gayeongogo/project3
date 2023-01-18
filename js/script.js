@@ -139,4 +139,3 @@ $(".tab-product-set ul li").click(function (e) {
     $( activeTab).fadeIn()
 });
 
-/* 메인배너 텍스트 */

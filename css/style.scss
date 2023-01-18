@@ -659,10 +659,13 @@ $fw-bold: 700;
         }
     }
     &-text{
-        width: 9474px;
+        width: 100%;
         img{
             display: block;
             height: 120px;
+          
+            position: relative;
+            left: 0;
             
         }
     }
@@ -679,5 +682,90 @@ $fw-bold: 700;
             font-size: $fs-15;
             letter-spacing: 2.3px;
         }
+    }
+    &-area{
+        width: 100%;
+        padding: 0 300px;
+        
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            
+            >li{
+                flex-basis: 32%;
+                position: relative;
+                margin: 5px;
+                
+                >a{
+                    display: block;
+                    width: 100%;
+                    
+                    >img{
+                        width: 100%;
+                        display: block;
+                    }
+                }
+                &:before{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    content: "";
+                    width: 100%;
+                    background: #000;
+                    opacity: 0;
+                    transition: .3s;
+                }
+                &:hover{
+                    &::before{
+                        opacity: .8;
+                    }
+                    .insta-desc{
+                        transform: translate(-50%,-60%);
+                        opacity: 1;
+                    }
+                    .share{
+                        a{opacity: .6;}
+                    }
+                }
+            }
+        }
+    }
+    &-desc{
+        width: 100%;
+        padding: 5px 10px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        opacity: 0;
+        transition: .3s;
+        transform: translate(-50%,-50%);
+        font-size: $fs-18;
+        span{
+            color: $color-white;
+        }
+    }
+    .share{
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        a{
+            display: inline-block;
+            width: 26px;
+            height: 26px;
+            margin-right: 2px;
+            opacity: 0;
+            transition: .3s;
+            img{
+                width: 100%;
+                
+            }
+            &:last-child{margin-right: 0;}
+            
+        }
+        
     }
 }

@@ -656,11 +656,13 @@
   opacity: 0.8;
 }
 .main-banner-text {
-  width: 9474px;
+  width: 100%;
 }
 .main-banner-text img {
   display: block;
   height: 120px;
+  position: relative;
+  left: 0;
 }
 
 .insta {
@@ -676,4 +678,82 @@
 .insta-logo span {
   font-size: 15px;
   letter-spacing: 2.3px;
+}
+.insta-area {
+  width: 100%;
+  padding: 0 300px;
+}
+.insta-area ul {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.insta-area ul > li {
+  flex-basis: 32%;
+  position: relative;
+  margin: 5px;
+}
+.insta-area ul > li > a {
+  display: block;
+  width: 100%;
+}
+.insta-area ul > li > a > img {
+  width: 100%;
+  display: block;
+}
+.insta-area ul > li:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  width: 100%;
+  background: #000;
+  opacity: 0;
+  transition: 0.3s;
+}
+.insta-area ul > li:hover::before {
+  opacity: 0.8;
+}
+.insta-area ul > li:hover .insta-desc {
+  transform: translate(-50%, -60%);
+  opacity: 1;
+}
+.insta-area ul > li:hover .share a {
+  opacity: 0.6;
+}
+.insta-desc {
+  width: 100%;
+  padding: 5px 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  transition: 0.3s;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+}
+.insta-desc span {
+  color: #fff;
+}
+.insta .share {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.insta .share a {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  margin-right: 2px;
+  opacity: 0;
+  transition: 0.3s;
+}
+.insta .share a img {
+  width: 100%;
+}
+.insta .share a:last-child {
+  margin-right: 0;
 }/*# sourceMappingURL=style.css.map */
