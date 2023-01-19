@@ -9,6 +9,13 @@
 @media screen and (max-width: 1370px) {
     .insta-area {padding: 0 200px;}
 }
+@media screen and (max-width: 1300px) {
+    .footer-inner {flex-direction: column;}
+    .footer-logo {flex-basis: 100%; margin-bottom: 30px; text-align: center;}
+    .footer-ect {flex-basis: 100%;}
+    .footer .capyright {text-align: center; margin-top: 20px;}
+}
+
 @media screen and (max-width: 1170px) {
     .insta-area {padding: 0 100px;}
 }
@@ -37,6 +44,10 @@
         padding: 0;
     }
     .mainTitle img {max-width: 100%;}
+
+    .footer-etc > ul {
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 650px) {
