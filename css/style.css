@@ -11,6 +11,7 @@
 
 #main {
   width: 100%;
+  overflow: hidden;
 }
 
 #section1 {
@@ -26,6 +27,14 @@
 }
 
 #section4 {
+  width: 100%;
+}
+
+#bottomImg {
+  width: 100%;
+}
+
+#footer {
   width: 100%;
 }
 
@@ -756,4 +765,52 @@
 }
 .insta .share a:last-child {
   margin-right: 0;
+}
+.insta .moreBtn {
+  border: 2px solid #555;
+  line-height: 50px;
+  font-weight: 500;
+  width: 200px;
+  height: 50px;
+  letter-spacing: 2px;
+  display: inline-block;
+  text-align: center;
+  margin: 50px auto 0;
+}
+.insta .moreBtn:hover {
+  color: #fff;
+  background: #e72819;
+  border: 1px solid #e72819;
+  opacity: 0.8;
+}
+
+.bottomImg {
+  margin: 110px auto 0;
+  width: 100%;
+  perspective: 1980px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottomImg .item {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transition: 2s;
+}
+.bottomImg .item img {
+  max-width: 100%;
+  padding: 0 50px;
+}
+.bottomImg .item.front {
+  position: absolute;
+  transform: rotateY(0deg);
+}
+.bottomImg .item.back {
+  transform: rotateY(180deg);
+}
+.bottomImg:hover .item.front {
+  transform: rotateY(-180deg);
+}
+.bottomImg:hover .item.back {
+  transform: rotateY(0deg);
 }/*# sourceMappingURL=style.css.map */
