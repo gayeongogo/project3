@@ -182,10 +182,14 @@ $fw-bold: 700;
 .header{
     position: fixed;
     top: 0;
-    margin: 30px 0 0 0;
+    margin-top: 30px;
     padding: 10px 50px 90px 50px;
     transition: .4s;
     z-index: 9999;
+    &.top{
+        margin-top: 0;
+        background: rgba(255,255,255,0.9);
+    }
     &:hover{
         background: $color-white;
     }
@@ -767,5 +771,22 @@ $fw-bold: 700;
             
         }
         
+    }
+}
+.instaBtn{
+    border: 2px solid #555;
+    line-height: 50px;
+    font-weight: 500;
+    width: 200px;
+    height: 50px;
+    letter-spacing: 2.0px;
+    display: inline-block;
+    text-align: center;
+    margin: 50px auto 0;
+    &:hover{
+        background: $color-red-df;
+        color: $color-white;
+        border: 2px solid $color-red-df;
+        opacity: .8;
     }
 }

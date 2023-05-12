@@ -139,3 +139,15 @@ $(".tab-product-set ul li").click(function (e) {
     $( activeTab).fadeIn()
 });
 
+//메뉴 스크롤
+$(function() {
+  $(window).scroll(function(){
+    let window = $(this).scrollTop();
+    if (window) {
+      $('.header').addClass('top',1000);
+    } else {
+      $('.header').removeClass('top',1000);
+    }
+  });
+});
+

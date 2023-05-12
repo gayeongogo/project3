@@ -184,10 +184,14 @@
 .header {
   position: fixed;
   top: 0;
-  margin: 30px 0 0 0;
+  margin-top: 30px;
   padding: 10px 50px 90px 50px;
   transition: 0.4s;
   z-index: 9999;
+}
+.header.top {
+  margin-top: 0;
+  background: rgba(255, 255, 255, 0.9);
 }
 .header:hover {
   background: #fff;
@@ -756,4 +760,22 @@
 }
 .insta .share a:last-child {
   margin-right: 0;
+}
+
+.instaBtn {
+  border: 2px solid #555;
+  line-height: 50px;
+  font-weight: 500;
+  width: 200px;
+  height: 50px;
+  letter-spacing: 2px;
+  display: inline-block;
+  text-align: center;
+  margin: 50px auto 0;
+}
+.instaBtn:hover {
+  background: #e72819;
+  color: #fff;
+  border: 2px solid #e72819;
+  opacity: 0.8;
 }/*# sourceMappingURL=style.css.map */
