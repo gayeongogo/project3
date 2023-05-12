@@ -790,3 +790,113 @@ $fw-bold: 700;
         opacity: .8;
     }
 }
+
+.bottomImg{
+margin: 110px auto 0;
+width: 100%;
+perspective: 1980px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+.item{
+    backface-visibility: hidden;
+    transition: 2s;
+    img{
+        max-width: 100%;
+        padding: 0 50px;
+    }
+    &.front{
+        position: absolute;
+        transform: rotateY(0deg);
+    }
+    &.back{
+        transform: rotateY(180deg);
+    }
+}
+&:hover{
+    .item{
+        &.front{
+            transform: rotateY(-180deg);
+        }
+        &.back{
+            transform: rotateY(0deg);
+        }
+    }
+}
+}
+
+/* footer 영역 */
+.footer{
+    width: 100%;
+    clear: both;
+    display: inline-block;
+    margin: 120px 0 0 0;
+    border-top: 2px solid #333;
+    padding: 60px 0 20px 0;
+    &-inner{
+        display: flex;
+        margin: 0 auto;
+        width: 80%;
+        letter-spacing: 0.4px;
+    }
+    &-logo{
+        flex-basis: 20%;
+    }
+    &-etc{
+        flex-basis: 80%;
+        >ul{
+            display: flex;
+            justify-content: space-between;
+            >li{
+                line-height: 25px;
+                padding-right: 20px;
+                >a{
+                    display: block;
+                    font-size: 15px;
+                    letter-spacing: 0.6px;
+                    padding: 0 0 15px 0;
+                    color: black;
+                    font-weight: $fw-bold;
+                }
+                ul{
+                    li{
+
+                        a{
+                            display: block;
+                            font-size: 12px;
+                            font-weight: 500;
+                            color: #777;
+                            padding: 2px 0;
+                        }
+                        &:hover{
+                            a{
+                                color: $color-red-df;
+                                transition: .3s;
+                            }
+                        }
+                    }
+                }
+                &:last-child{padding-right: 0;}
+            }
+        }
+    }
+    b{
+        color: black;
+    }
+    .footer-ins-ico{
+        width: 23px;
+        height: 23px;
+        vertical-align: bottom;
+    }
+    .capyright{
+        text-align: right;
+    }
+    span{
+        &:hover{
+            cursor: pointer;
+            color: $color-red-df;
+            transition: .3s;
+        }
+    }
+}

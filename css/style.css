@@ -778,4 +778,102 @@
   color: #fff;
   border: 2px solid #e72819;
   opacity: 0.8;
+}
+
+.bottomImg {
+  margin: 110px auto 0;
+  width: 100%;
+  perspective: 1980px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottomImg .item {
+  backface-visibility: hidden;
+  transition: 2s;
+}
+.bottomImg .item img {
+  max-width: 100%;
+  padding: 0 50px;
+}
+.bottomImg .item.front {
+  position: absolute;
+  transform: rotateY(0deg);
+}
+.bottomImg .item.back {
+  transform: rotateY(180deg);
+}
+.bottomImg:hover .item.front {
+  transform: rotateY(-180deg);
+}
+.bottomImg:hover .item.back {
+  transform: rotateY(0deg);
+}
+
+/* footer 영역 */
+.footer {
+  width: 100%;
+  clear: both;
+  display: inline-block;
+  margin: 120px 0 0 0;
+  border-top: 2px solid #333;
+  padding: 60px 0 20px 0;
+}
+.footer-inner {
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+  letter-spacing: 0.4px;
+}
+.footer-logo {
+  flex-basis: 20%;
+}
+.footer-etc {
+  flex-basis: 80%;
+}
+.footer-etc > ul {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-etc > ul > li {
+  line-height: 25px;
+  padding-right: 20px;
+}
+.footer-etc > ul > li > a {
+  display: block;
+  font-size: 15px;
+  letter-spacing: 0.6px;
+  padding: 0 0 15px 0;
+  color: black;
+  font-weight: 700;
+}
+.footer-etc > ul > li ul li a {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  color: #777;
+  padding: 2px 0;
+}
+.footer-etc > ul > li ul li:hover a {
+  color: #e72819;
+  transition: 0.3s;
+}
+.footer-etc > ul > li:last-child {
+  padding-right: 0;
+}
+.footer b {
+  color: black;
+}
+.footer .footer-ins-ico {
+  width: 23px;
+  height: 23px;
+  vertical-align: bottom;
+}
+.footer .capyright {
+  text-align: right;
+}
+.footer span:hover {
+  cursor: pointer;
+  color: #e72819;
+  transition: 0.3s;
 }/*# sourceMappingURL=style.css.map */
